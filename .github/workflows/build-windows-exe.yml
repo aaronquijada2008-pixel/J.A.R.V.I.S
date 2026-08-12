@@ -26,8 +26,8 @@ jobs:
 
       - name: Build EXE with PyInstaller
         run: |
-          # Use the .spec file; pyaudio is excluded inside the spec to avoid bundling native audio
-          pyinstaller --clean build/jarvis.spec
+          # Run the build script from scripts/ which handles paths correctly
+          python scripts/build_exe.py
       - name: Install NSIS (for creating installer)
         run: |
           choco install nsis -y || echo "choco install failed or choco not available"
