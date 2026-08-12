@@ -21,10 +21,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install pyinstaller
+          # Install the project without building native dependencies (avoid pyaudio compilation)
+          python -m pip install -e . --no-deps
 
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --clean build/jarvis.spec
+          # Exclude optional native audio module to prevent PyInstaller from trying to bundle it
+          pyinstaller --clean --exclude-module pyaudio build/jarvis.spec
       - name: Install NSIS (for creating installer)
         run: |
           choco install nsis -y || echo "choco install failed or choco not available"
