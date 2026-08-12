@@ -1,0 +1,75 @@
+﻿
+  build_logs\build-windows\5_Build EXE with PyInstaller.txt:13:2026-08-12T05:39:01.3019906Z 316 INFO: Python: 3.12.10
+  build_logs\build-windows\5_Build EXE with PyInstaller.txt:14:2026-08-12T05:39:01.3260126Z 340 INFO: Platform: Windows-2025Server-10.0.26100-SP0
+  build_logs\build-windows\5_Build EXE with PyInstaller.txt:15:2026-08-12T05:39:01.3260692Z 340 INFO: Python environment: C:\hostedtoolcache\windows\Python\3.12.10\x64
+> build_logs\build-windows\5_Build EXE with PyInstaller.txt:16:2026-08-12T05:39:01.3262368Z ERROR: option(s) not allowed:
+  build_logs\build-windows\5_Build EXE with PyInstaller.txt:17:2026-08-12T05:39:01.3263062Z   --exclude-module
+  build_logs\build-windows\5_Build EXE with PyInstaller.txt:18:2026-08-12T05:39:01.3267346Z makespec options not valid when a .spec file is given
+> build_logs\build-windows\5_Build EXE with PyInstaller.txt:19:2026-08-12T05:39:01.4870800Z ##[error]Process completed with exit code 1.
+  build_logs\test (3.1)\3_Set up Python.txt:11:2026-08-12T05:53:32.3875525Z Version 3.1 was not found in the local cache
+  build_logs\test (3.1)\3_Set up Python.txt:12:2026-08-12T05:53:32.3987044Z (node:2177) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a 
+userland alternative instead.
+  build_logs\test (3.1)\3_Set up Python.txt:13:2026-08-12T05:53:32.3988595Z (Use `node --trace-deprecation ...` to show where the warning was created)
+> build_logs\test (3.1)\3_Set up Python.txt:14:2026-08-12T05:53:32.7989312Z ##[error]The version '3.1' with architecture 'x64' was not found for Ubuntu 24.04.
+  build_logs\test (3.1)\3_Set up Python.txt:15:The list of all available versions can be found here: 
+https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
+  build_logs\test (3.11)\4_Install dependencies.txt:54:2026-08-12T05:53:38.4212228Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 193.5 MB/s  0:00:00
+  build_logs\test (3.11)\4_Install dependencies.txt:55:2026-08-12T05:53:38.4643896Z Building wheels for collected packages: pyaudio
+  build_logs\test (3.11)\4_Install dependencies.txt:56:2026-08-12T05:53:38.4652423Z   Building wheel for pyaudio (pyproject.toml): started
+> build_logs\test (3.11)\4_Install dependencies.txt:57:2026-08-12T05:53:38.8899781Z   Building wheel for pyaudio (pyproject.toml): finished with status 'error'
+> build_logs\test (3.11)\4_Install dependencies.txt:58:2026-08-12T05:53:38.8943695Z   error: subprocess-exited-with-error
+  build_logs\test (3.11)\4_Install dependencies.txt:59:2026-08-12T05:53:38.8944241Z   
+  build_logs\test (3.11)\4_Install dependencies.txt:60:2026-08-12T05:53:38.8945132Z   × Building wheel for pyaudio (pyproject.toml) did not run successfully.
+  build_logs\test (3.11)\4_Install dependencies.txt:61:2026-08-12T05:53:38.8946039Z   │ exit code: 1
+  build_logs\test (3.11)\4_Install dependencies.txt:68:2026-08-12T05:53:38.8949929Z       running build_ext
+  build_logs\test (3.11)\4_Install dependencies.txt:69:2026-08-12T05:53:38.8950658Z       building '_portaudio' extension
+  build_logs\test (3.11)\4_Install dependencies.txt:70:2026-08-12T05:53:38.8952306Z       gcc -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC 
+-I/opt/hostedtoolcache/Python/3.11.15/x64/include/python3.11 -c src/_portaudiomodule.c -o build/temp.linux-x86_64-cpython-311/src/_portaudiomodule.o
+> build_logs\test (3.11)\4_Install dependencies.txt:71:2026-08-12T05:53:38.8954260Z       src/_portaudiomodule.c:29:10: fatal error: portaudio.h: No such file or directory
+  build_logs\test (3.11)\4_Install dependencies.txt:72:2026-08-12T05:53:38.8955116Z          29 | #include "portaudio.h"
+  build_logs\test (3.11)\4_Install dependencies.txt:73:2026-08-12T05:53:38.8955659Z             |          ^~~~~~~~~~~~~
+  build_logs\test (3.11)\4_Install dependencies.txt:74:2026-08-12T05:53:38.8956186Z       compilation terminated.
+> build_logs\test (3.11)\4_Install dependencies.txt:75:2026-08-12T05:53:38.8958288Z       error: Command '['gcc', '-Wsign-compare', '-DNDEBUG', '-g', '-fwrapv', '-O3', 
+'-Wall', '-fPIC', '-I/opt/hostedtoolcache/Python/3.11.15/x64/include/python3.11', '-c', 'src/_portaudiomodule.c', '-o', 
+'build/temp.linux-x86_64-cpython-311/src/_portaudiomodule.o']' returned non-zero exit status 1.
+  build_logs\test (3.11)\4_Install dependencies.txt:76:2026-08-12T05:53:38.8960924Z       [end of output]
+  build_logs\test (3.11)\4_Install dependencies.txt:77:2026-08-12T05:53:38.8961301Z   
+> build_logs\test (3.11)\4_Install dependencies.txt:78:2026-08-12T05:53:38.8961893Z   note: This error originates from a subprocess, and is likely not a problem with pip.
+> build_logs\test (3.11)\4_Install dependencies.txt:79:2026-08-12T05:53:38.8962842Z   ERROR: Failed building wheel for pyaudio
+> build_logs\test (3.11)\4_Install dependencies.txt:80:2026-08-12T05:53:38.8963385Z error: failed-wheel-build-for-install
+  build_logs\test (3.11)\4_Install dependencies.txt:81:2026-08-12T05:53:38.8963708Z 
+> build_logs\test (3.11)\4_Install dependencies.txt:82:2026-08-12T05:53:38.8964250Z × Failed to build installable wheels for some pyproject.toml based projects
+  build_logs\test (3.11)\4_Install dependencies.txt:83:2026-08-12T05:53:38.8964995Z ╰─> pyaudio
+> build_logs\test (3.11)\4_Install dependencies.txt:84:2026-08-12T05:53:38.8965344Z Failed to build pyaudio
+> build_logs\test (3.11)\4_Install dependencies.txt:85:2026-08-12T05:53:38.9674098Z ##[error]The operation was canceled.
+  build_logs\test (3.12)\4_Install dependencies.txt:54:2026-08-12T05:53:41.8956080Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 185.3 MB/s  0:00:00
+  build_logs\test (3.12)\4_Install dependencies.txt:55:2026-08-12T05:53:41.9407917Z Building wheels for collected packages: pyaudio
+  build_logs\test (3.12)\4_Install dependencies.txt:56:2026-08-12T05:53:41.9416077Z   Building wheel for pyaudio (pyproject.toml): started
+> build_logs\test (3.12)\4_Install dependencies.txt:57:2026-08-12T05:53:43.2092897Z   Building wheel for pyaudio (pyproject.toml): finished with status 'error'
+> build_logs\test (3.12)\4_Install dependencies.txt:58:2026-08-12T05:53:43.2136752Z   error: subprocess-exited-with-error
+  build_logs\test (3.12)\4_Install dependencies.txt:59:2026-08-12T05:53:43.2137263Z   
+  build_logs\test (3.12)\4_Install dependencies.txt:60:2026-08-12T05:53:43.2137919Z   × Building wheel for pyaudio (pyproject.toml) did not run successfully.
+  build_logs\test (3.12)\4_Install dependencies.txt:61:2026-08-12T05:53:43.2138397Z   │ exit code: 1
+  build_logs\test (3.12)\4_Install dependencies.txt:68:2026-08-12T05:53:43.2140457Z       running build_ext
+  build_logs\test (3.12)\4_Install dependencies.txt:69:2026-08-12T05:53:43.2141035Z       building '_portaudio' extension
+  build_logs\test (3.12)\4_Install dependencies.txt:70:2026-08-12T05:53:43.2142270Z       gcc -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall -fPIC 
+-I/opt/hostedtoolcache/Python/3.12.13/x64/include/python3.12 -c src/_portaudiomodule.c -o build/temp.linux-x86_64-cpython-312/src/_portaudiomodule.o
+> build_logs\test (3.12)\4_Install dependencies.txt:71:2026-08-12T05:53:43.2143800Z       src/_portaudiomodule.c:29:10: fatal error: portaudio.h: No such file or directory
+  build_logs\test (3.12)\4_Install dependencies.txt:72:2026-08-12T05:53:43.2144253Z          29 | #include "portaudio.h"
+  build_logs\test (3.12)\4_Install dependencies.txt:73:2026-08-12T05:53:43.2144523Z             |          ^~~~~~~~~~~~~
+  build_logs\test (3.12)\4_Install dependencies.txt:74:2026-08-12T05:53:43.2144808Z       compilation terminated.
+> build_logs\test (3.12)\4_Install dependencies.txt:75:2026-08-12T05:53:43.2146213Z       error: Command '['gcc', '-fno-strict-overflow', '-Wsign-compare', '-DNDEBUG', 
+'-g', '-O3', '-Wall', '-fPIC', '-I/opt/hostedtoolcache/Python/3.12.13/x64/include/python3.12', '-c', 'src/_portaudiomodule.c', '-o', 
+'build/temp.linux-x86_64-cpython-312/src/_portaudiomodule.o']' returned non-zero exit status 1.
+  build_logs\test (3.12)\4_Install dependencies.txt:76:2026-08-12T05:53:43.2148215Z       [end of output]
+  build_logs\test (3.12)\4_Install dependencies.txt:77:2026-08-12T05:53:43.2148561Z   
+> build_logs\test (3.12)\4_Install dependencies.txt:78:2026-08-12T05:53:43.2149129Z   note: This error originates from a subprocess, and is likely not a problem with pip.
+> build_logs\test (3.12)\4_Install dependencies.txt:79:2026-08-12T05:53:43.2149926Z   ERROR: Failed building wheel for pyaudio
+> build_logs\test (3.12)\4_Install dependencies.txt:80:2026-08-12T05:53:43.2150237Z Failed to build pyaudio
+> build_logs\test (3.12)\4_Install dependencies.txt:81:2026-08-12T05:53:43.2160180Z error: failed-wheel-build-for-install
+  build_logs\test (3.12)\4_Install dependencies.txt:82:2026-08-12T05:53:43.2160531Z 
+> build_logs\test (3.12)\4_Install dependencies.txt:83:2026-08-12T05:53:43.2161055Z × Failed to build installable wheels for some pyproject.toml based projects
+  build_logs\test (3.12)\4_Install dependencies.txt:84:2026-08-12T05:53:43.2161487Z ╰─> pyaudio
+> build_logs\test (3.12)\4_Install dependencies.txt:85:2026-08-12T05:53:43.2829795Z ##[error]The operation was canceled.
+
+

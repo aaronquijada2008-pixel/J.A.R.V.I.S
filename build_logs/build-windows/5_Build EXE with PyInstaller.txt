@@ -1,0 +1,19 @@
+﻿2026-08-12T05:39:00.5659733Z ##[group]Run # Exclude optional native audio module to prevent PyInstaller from trying to bundle it
+2026-08-12T05:39:00.5660537Z [36;1m# Exclude optional native audio module to prevent PyInstaller from trying to bundle it[0m
+2026-08-12T05:39:00.5661100Z [36;1mpyinstaller --clean --exclude-module pyaudio build/jarvis.spec[0m
+2026-08-12T05:39:00.5743805Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-08-12T05:39:00.5744165Z env:
+2026-08-12T05:39:00.5744443Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:39:00.5744893Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.12.10\x64/lib/pkgconfig
+2026-08-12T05:39:00.5745334Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:39:00.5745730Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:39:00.5746127Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:39:00.5746449Z ##[endgroup]
+2026-08-12T05:39:01.3016779Z 316 INFO: PyInstaller: 6.22.0, contrib hooks: 2026.6
+2026-08-12T05:39:01.3019906Z 316 INFO: Python: 3.12.10
+2026-08-12T05:39:01.3260126Z 340 INFO: Platform: Windows-2025Server-10.0.26100-SP0
+2026-08-12T05:39:01.3260692Z 340 INFO: Python environment: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:39:01.3262368Z ERROR: option(s) not allowed:
+2026-08-12T05:39:01.3263062Z   --exclude-module
+2026-08-12T05:39:01.3267346Z makespec options not valid when a .spec file is given
+2026-08-12T05:39:01.4870800Z ##[error]Process completed with exit code 1.

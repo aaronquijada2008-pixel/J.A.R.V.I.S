@@ -12,6 +12,7 @@ cmd = [
     sys.executable,
     "-m", "PyInstaller",
     "--clean",
+    "-y",  # Force overwrite output directory
     "--distpath", os.path.join(project_root, "dist"),
     "--workpath", os.path.join(project_root, "build", "pyi-build"),
     os.path.join("build", "jarvis.spec")

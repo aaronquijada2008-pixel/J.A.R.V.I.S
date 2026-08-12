@@ -1,0 +1,15 @@
+﻿2026-08-12T05:53:32.2423010Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-08-12T05:53:32.2426224Z ##[group]Run actions/setup-python@v4
+2026-08-12T05:53:32.2426799Z with:
+2026-08-12T05:53:32.2427248Z   python-version: 3.1
+2026-08-12T05:53:32.2427764Z   check-latest: false
+2026-08-12T05:53:32.2432384Z   token: ***
+2026-08-12T05:53:32.2432879Z   update-environment: true
+2026-08-12T05:53:32.2433414Z   allow-prereleases: false
+2026-08-12T05:53:32.2433936Z ##[endgroup]
+2026-08-12T05:53:32.3804850Z ##[group]Installed versions
+2026-08-12T05:53:32.3875525Z Version 3.1 was not found in the local cache
+2026-08-12T05:53:32.3987044Z (node:2177) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-08-12T05:53:32.3988595Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-12T05:53:32.7989312Z ##[error]The version '3.1' with architecture 'x64' was not found for Ubuntu 24.04.
+The list of all available versions can be found here: https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json

@@ -1,0 +1,65 @@
+﻿2026-08-12T05:38:36.8493779Z ##[group]Run python -m pip install --upgrade pip
+2026-08-12T05:38:36.8494341Z [36;1mpython -m pip install --upgrade pip[0m
+2026-08-12T05:38:36.8494692Z [36;1mpython -m pip install pyinstaller[0m
+2026-08-12T05:38:36.8495216Z [36;1m# Install the project without building native dependencies (avoid pyaudio compilation)[0m
+2026-08-12T05:38:36.8495732Z [36;1mpython -m pip install -e . --no-deps[0m
+2026-08-12T05:38:36.9298886Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-08-12T05:38:36.9299456Z env:
+2026-08-12T05:38:36.9299845Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:38:36.9300528Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.12.10\x64/lib/pkgconfig
+2026-08-12T05:38:36.9301461Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:38:36.9302255Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:38:36.9302843Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.12.10\x64
+2026-08-12T05:38:36.9303374Z ##[endgroup]
+2026-08-12T05:38:41.1050027Z Requirement already satisfied: pip in C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages (26.2)
+2026-08-12T05:38:41.5071708Z Collecting pip
+2026-08-12T05:38:41.7227332Z   Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)
+2026-08-12T05:38:41.7882885Z Downloading pip-26.2.1-py3-none-any.whl (1.8 MB)
+2026-08-12T05:38:41.9804994Z    ---------------------------------------- 1.8/1.8 MB 11.1 MB/s  0:00:00
+2026-08-12T05:38:42.2493163Z Installing collected packages: pip
+2026-08-12T05:38:42.2494990Z   Attempting uninstall: pip
+2026-08-12T05:38:42.2521397Z     Found existing installation: pip 26.2
+2026-08-12T05:38:42.3863356Z     Uninstalling pip-26.2:
+2026-08-12T05:38:42.4128287Z       Successfully uninstalled pip-26.2
+2026-08-12T05:38:44.7196471Z Successfully installed pip-26.2.1
+2026-08-12T05:38:46.3564773Z Collecting pyinstaller
+2026-08-12T05:38:46.5805772Z   Downloading pyinstaller-6.22.0-py3-none-win_amd64.whl.metadata (8.5 kB)
+2026-08-12T05:38:46.6330928Z Collecting altgraph (from pyinstaller)
+2026-08-12T05:38:46.6429024Z   Downloading altgraph-0.17.5-py2.py3-none-any.whl.metadata (7.5 kB)
+2026-08-12T05:38:46.6759710Z Requirement already satisfied: packaging>=22.0 in C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\site-packages (from pyinstaller) (26.2)
+2026-08-12T05:38:46.7059456Z Collecting pefile>=2022.5.30 (from pyinstaller)
+2026-08-12T05:38:46.7163865Z   Downloading pefile-2024.8.26-py3-none-any.whl.metadata (1.4 kB)
+2026-08-12T05:38:46.7773742Z Collecting pyinstaller-hooks-contrib>=2026.6 (from pyinstaller)
+2026-08-12T05:38:46.7867304Z   Downloading pyinstaller_hooks_contrib-2026.6-py3-none-any.whl.metadata (16 kB)
+2026-08-12T05:38:46.8527263Z Collecting pywin32-ctypes>=0.2.1 (from pyinstaller)
+2026-08-12T05:38:46.8622826Z   Downloading pywin32_ctypes-0.2.3-py3-none-any.whl.metadata (3.9 kB)
+2026-08-12T05:38:47.0192516Z Collecting setuptools>=42.0.0 (from pyinstaller)
+2026-08-12T05:38:47.0304068Z   Downloading setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+2026-08-12T05:38:47.0705364Z Downloading pyinstaller-6.22.0-py3-none-win_amd64.whl (1.4 MB)
+2026-08-12T05:38:47.2029083Z    ---------------------------------------- 1.4/1.4 MB 12.1 MB/s  0:00:00
+2026-08-12T05:38:47.2265392Z Downloading pefile-2024.8.26-py3-none-any.whl (74 kB)
+2026-08-12T05:38:47.2552671Z Downloading pyinstaller_hooks_contrib-2026.6-py3-none-any.whl (457 kB)
+2026-08-12T05:38:47.3102965Z Downloading pywin32_ctypes-0.2.3-py3-none-any.whl (30 kB)
+2026-08-12T05:38:47.3464289Z Downloading setuptools-84.0.0-py3-none-any.whl (818 kB)
+2026-08-12T05:38:47.3947372Z    ---------------------------------------- 818.2/818.2 kB 17.9 MB/s  0:00:00
+2026-08-12T05:38:47.4033378Z Downloading altgraph-0.17.5-py2.py3-none-any.whl (21 kB)
+2026-08-12T05:38:47.5495195Z Installing collected packages: altgraph, setuptools, pywin32-ctypes, pyinstaller-hooks-contrib, pefile, pyinstaller
+2026-08-12T05:38:53.7142327Z 
+2026-08-12T05:38:53.7164865Z Successfully installed altgraph-0.17.5 pefile-2024.8.26 pyinstaller-6.22.0 pyinstaller-hooks-contrib-2026.6 pywin32-ctypes-0.2.3 setuptools-84.0.0
+2026-08-12T05:38:54.9056961Z Obtaining file:///D:/a/J.A.R.V.I.S/J.A.R.V.I.S
+2026-08-12T05:38:54.9088498Z   Installing build dependencies: started
+2026-08-12T05:38:58.2612726Z   Installing build dependencies: finished with status 'done'
+2026-08-12T05:38:58.2630451Z   Checking if build backend supports build_editable: started
+2026-08-12T05:38:58.9093915Z   Checking if build backend supports build_editable: finished with status 'done'
+2026-08-12T05:38:58.9120967Z   Getting requirements to build editable: started
+2026-08-12T05:38:59.4535343Z   Getting requirements to build editable: finished with status 'done'
+2026-08-12T05:38:59.4567559Z   Preparing editable metadata (pyproject.toml): started
+2026-08-12T05:38:59.7925540Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+2026-08-12T05:38:59.7993369Z Building wheels for collected packages: jarvis-assistant
+2026-08-12T05:38:59.8021934Z   Building editable for jarvis-assistant (pyproject.toml): started
+2026-08-12T05:39:00.2064805Z   Building editable for jarvis-assistant (pyproject.toml): finished with status 'done'
+2026-08-12T05:39:00.2109694Z   Created wheel for jarvis-assistant: filename=jarvis_assistant-0.2.0-0.editable-py3-none-any.whl size=3766 sha256=699d727e5c757e20fb30d4a6249f690158cdd217f5cf7cade33493267f77c049
+2026-08-12T05:39:00.2112325Z   Stored in directory: C:\Users\runneradmin\AppData\Local\Temp\pip-ephem-wheel-cache-hkkzchs_\wheels\72\25\17\0834d426fca155a4d4641d34ea4d8b5f75379ab9e18a371956
+2026-08-12T05:39:00.2152174Z Successfully built jarvis-assistant
+2026-08-12T05:39:00.2336402Z Installing collected packages: jarvis-assistant
+2026-08-12T05:39:00.2626342Z Successfully installed jarvis-assistant-0.2.0
