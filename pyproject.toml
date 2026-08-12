@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jarvis-assistant"
+version = "0.2.0"
+description = "J.A.R.V.I.S - asistente personal (prototipo)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "pyttsx3==2.90",
+  "SpeechRecognition==3.8.1",
+  "pyaudio==0.2.11",
+  "pytest"
+]
+
+[project.urls]
+Homepage = "https://example.local"
+
+[tool.setuptools]
+packages = ["jarvis"]
+package-dir = {"" = "src"}
+include-package-data = true

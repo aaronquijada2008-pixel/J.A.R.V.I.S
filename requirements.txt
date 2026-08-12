@@ -1,0 +1,5 @@
+pyttsx3==2.90
+SpeechRecognition==3.8.1
+# PyAudio puede requerir instalación separada en Windows (pipwin recomendado)
+pyaudio==0.2.11
+pytest
